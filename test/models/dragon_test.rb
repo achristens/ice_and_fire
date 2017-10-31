@@ -46,7 +46,7 @@ class DragonTest < ActiveSupport::TestCase
 
   def test_that_stranger_cannot_mount
     # use your knowledge of factories to make this test pass!
-    rider = create(:rider, name: 'Aegon')
+    rider = build(:rider, name: 'Aegon')
     # binding.pry
     dragon = build(:dragon, name: 'Balerion', rider_id: 2)
 
